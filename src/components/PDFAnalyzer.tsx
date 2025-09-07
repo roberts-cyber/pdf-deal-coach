@@ -9,10 +9,10 @@ import { FileText, ExternalLink, Brain, Upload, Loader2 } from 'lucide-react';
 
 interface AnalysisResult {
   summary: string;
-  keyPoints: string[];
+  salaryDetails: string[];
   negotiationTips: string[];
-  riskAssessment: string;
-  recommendedActions: string[];
+  marketComparison: string;
+  recommendedCounterOffer: string[];
 }
 
 export const PDFAnalyzer = () => {
@@ -60,28 +60,32 @@ export const PDFAnalyzer = () => {
     await new Promise(resolve => setTimeout(resolve, 3000));
     
     return {
-      summary: "This appears to be a business proposal with competitive pricing and standard terms. The offer includes a 12-month contract with quarterly review periods.",
-      keyPoints: [
-        "Contract duration: 12 months with auto-renewal clause",
-        "Payment terms: Net 30 days",
-        "Service level agreement: 99.5% uptime guarantee",
-        "Pricing structure: Fixed monthly fee + usage-based charges",
-        "Termination clause: 60-day notice required"
+      summary: "This is a full-time software engineer position offer with competitive base salary and standard benefits package. The role includes equity compensation and performance bonuses.",
+      salaryDetails: [
+        "Base salary: $95,000 annually",
+        "Signing bonus: $5,000",
+        "Stock options: 0.25% equity vesting over 4 years",
+        "Annual bonus: Up to 15% of base salary",
+        "Health insurance: 100% premium covered",
+        "401k match: 4% company match",
+        "Vacation: 3 weeks PTO + holidays"
       ],
       negotiationTips: [
-        "Request a shorter initial contract period (6 months) to evaluate performance",
-        "Negotiate payment terms to Net 15 days for better cash flow",
-        "Ask for improved SLA (99.9% uptime) with penalty clauses",
-        "Seek volume discounts if usage exceeds certain thresholds",
-        "Include performance benchmarks with regular review meetings"
+        "Counter with $105,000-110,000 base - market rate for this role is 10-15% higher",
+        "Request $8,000-10,000 signing bonus to cover relocation or opportunity cost",
+        "Negotiate for 0.35% equity - initial equity grants are often negotiable",
+        "Ask for performance bonus guarantee of 10% minimum in first year",
+        "Request 4 weeks vacation - standard for senior positions",
+        "Negotiate remote work flexibility (2-3 days from home per week)"
       ],
-      riskAssessment: "Medium risk. The contract terms are generally favorable but lack specific penalty clauses for underperformance. The auto-renewal clause requires careful attention.",
-      recommendedActions: [
-        "Schedule a call to discuss contract duration flexibility",
-        "Request references from similar-sized clients",
-        "Clarify data security and compliance measures",
-        "Define clear success metrics and KPIs",
-        "Negotiate escape clauses for underperformance"
+      marketComparison: "Based on current market data, this offer is 8-12% below market rate for similar positions. The equity component is reasonable but could be improved. Benefits package is competitive.",
+      recommendedCounterOffer: [
+        "Base salary: $107,500 (12% increase)",
+        "Signing bonus: $8,500",
+        "Request equity increase to 0.30%",
+        "Negotiate for minimum 10% annual bonus guarantee",
+        "Ask for additional week of vacation",
+        "Request professional development budget ($2,500/year)"
       ]
     };
   };
@@ -125,7 +129,7 @@ export const PDFAnalyzer = () => {
             Upload or Link PDF
           </CardTitle>
           <CardDescription>
-            Upload a PDF file or provide a URL to analyze your business document
+            Upload your job offer letter or salary proposal PDF to get detailed negotiation analysis
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
@@ -199,12 +203,12 @@ export const PDFAnalyzer = () => {
               <p className="text-muted-foreground">{analysisResult.summary}</p>
               
               <div className="mt-4">
-                <h4 className="font-semibold mb-2">Key Points:</h4>
+                <h4 className="font-semibold mb-2">Salary & Benefits Breakdown:</h4>
                 <ul className="space-y-1">
-                  {analysisResult.keyPoints.map((point, index) => (
+                  {analysisResult.salaryDetails.map((detail, index) => (
                     <li key={index} className="text-sm text-muted-foreground flex items-start gap-2">
                       <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                      {point}
+                      {detail}
                     </li>
                   ))}
                 </ul>
@@ -235,23 +239,23 @@ export const PDFAnalyzer = () => {
 
           <Card>
             <CardHeader>
-              <CardTitle>Risk Assessment</CardTitle>
+              <CardTitle className="text-primary">Market Comparison</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">{analysisResult.riskAssessment}</p>
+              <p className="text-muted-foreground">{analysisResult.marketComparison}</p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Recommended Actions</CardTitle>
+              <CardTitle className="text-accent">Recommended Counter Offer</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2">
-                {analysisResult.recommendedActions.map((action, index) => (
+                {analysisResult.recommendedCounterOffer.map((offer, index) => (
                   <li key={index} className="text-sm text-muted-foreground flex items-start gap-2">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                    {action}
+                    <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
+                    {offer}
                   </li>
                 ))}
               </ul>
