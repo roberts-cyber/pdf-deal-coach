@@ -39,12 +39,12 @@ const Index = () => {
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mx-auto mb-3">
                 <span className="text-primary-foreground text-sm">📺</span>
               </div>
-              <h3 className="font-medium mb-2 text-sm">How to Negotiate Salary</h3>
+              <h3 className="font-medium mb-2 text-sm">Complete Salary Negotiation Guide</h3>
               <p className="text-muted-foreground text-xs mb-3">
-                Step-by-step guide on negotiating your salary with confidence
+                Everything you need to know about salary negotiation from Indeed
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=XY5SeCl_8NE" 
+                href="https://www.youtube.com/watch?v=JdsB9QQLeVA" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-primary hover:underline text-xs"
@@ -57,12 +57,12 @@ const Index = () => {
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mx-auto mb-3">
                 <span className="text-primary-foreground text-sm">📺</span>
               </div>
-              <h3 className="font-medium mb-2 text-sm">Salary Negotiation Scripts</h3>
+              <h3 className="font-medium mb-2 text-sm">How to Get a Raise at Work</h3>
               <p className="text-muted-foreground text-xs mb-3">
-                Exact words and phrases to use when negotiating compensation
+                Salary negotiation tips for every stage of your career
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=u9BoG1n1948" 
+                href="https://www.youtube.com/watch?v=AkS7ywlA9zc" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-primary hover:underline text-xs"
@@ -75,12 +75,12 @@ const Index = () => {
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mx-auto mb-3">
                 <span className="text-primary-foreground text-sm">📺</span>
               </div>
-              <h3 className="font-medium mb-2 text-sm">Common Negotiation Mistakes</h3>
+              <h3 className="font-medium mb-2 text-sm">3 Evidence-Based Negotiation Tips</h3>
               <p className="text-muted-foreground text-xs mb-3">
-                Learn what NOT to do during salary negotiations
+                Scientific strategies backed by 93,000+ data points
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=km2Hd_xgo9Q" 
+                href="https://www.youtube.com/watch?v=e2_HXKNIzaM" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-primary hover:underline text-xs"
