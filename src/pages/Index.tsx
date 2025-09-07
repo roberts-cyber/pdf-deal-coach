@@ -44,7 +44,7 @@ const Index = () => {
                 Everything you need to know about salary negotiation from Indeed
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=JdsB9QQLeVA" 
+                href="https://youtu.be/J30wmYgzVXM?si=t692nq2W45aTXdem" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-primary hover:underline text-xs"
@@ -89,23 +89,6 @@ const Index = () => {
               </a>
             </div>
 
-            <div className="bg-card rounded-lg p-6 hover:shadow-sm transition-shadow">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mx-auto mb-3">
-                <span className="text-primary-foreground text-sm">📺</span>
-              </div>
-              <h3 className="font-medium mb-2 text-sm">Advanced Salary Negotiation</h3>
-              <p className="text-muted-foreground text-xs mb-3">
-                Professional strategies for maximizing your offer
-              </p>
-              <a 
-                href="https://youtu.be/J30wmYgzVXM?si=QgqDQySX7JNSSuWC" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-primary hover:underline text-xs"
-              >
-                Watch on YouTube →
-              </a>
-            </div>
 
             {/* Articles */}
             <div className="bg-card rounded-lg p-6 hover:shadow-sm transition-shadow">
