@@ -69,6 +69,148 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Resources Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Negotiation Resources</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Learn from experts with these curated videos and articles on salary negotiation strategies.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {/* YouTube Videos */}
+            <div className="bg-card rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold">📺</span>
+              </div>
+              <h3 className="font-semibold mb-2">How to Negotiate Salary</h3>
+              <p className="text-muted-foreground text-sm mb-4">
+                Step-by-step guide on negotiating your salary with confidence and data.
+              </p>
+              <a 
+                href="https://www.youtube.com/watch?v=XY5SeCl_8NE" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline text-sm font-medium"
+              >
+                Watch on YouTube →
+              </a>
+            </div>
+
+            <div className="bg-card rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold">📺</span>
+              </div>
+              <h3 className="font-semibold mb-2">Salary Negotiation Scripts</h3>
+              <p className="text-muted-foreground text-sm mb-4">
+                Exact words and phrases to use when negotiating your compensation package.
+              </p>
+              <a 
+                href="https://www.youtube.com/watch?v=u9BoG1n1948" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline text-sm font-medium"
+              >
+                Watch on YouTube →
+              </a>
+            </div>
+
+            <div className="bg-card rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold">📺</span>
+              </div>
+              <h3 className="font-semibold mb-2">Common Negotiation Mistakes</h3>
+              <p className="text-muted-foreground text-sm mb-4">
+                Learn what NOT to do during salary negotiations and how to avoid pitfalls.
+              </p>
+              <a 
+                href="https://www.youtube.com/watch?v=km2Hd_xgo9Q" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline text-sm font-medium"
+              >
+                Watch on YouTube →
+              </a>
+            </div>
+
+            {/* Articles */}
+            <div className="bg-card rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold">📄</span>
+              </div>
+              <h3 className="font-semibold mb-2">Harvard Business Review Guide</h3>
+              <p className="text-muted-foreground text-sm mb-4">
+                "15 Rules for Negotiating a Job Offer" - comprehensive strategy guide.
+              </p>
+              <a 
+                href="https://hbr.org/2014/04/15-rules-for-negotiating-a-job-offer" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline text-sm font-medium"
+              >
+                Read Article →
+              </a>
+            </div>
+
+            <div className="bg-card rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold">📄</span>
+              </div>
+              <h3 className="font-semibold mb-2">Glassdoor Negotiation Tips</h3>
+              <p className="text-muted-foreground text-sm mb-4">
+                Research-backed strategies for negotiating salary and benefits effectively.
+              </p>
+              <a 
+                href="https://www.glassdoor.com/blog/guide-salary-negotiations/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline text-sm font-medium"
+              >
+                Read Article →
+              </a>
+            </div>
+
+            <div className="bg-card rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold">💰</span>
+              </div>
+              <h3 className="font-semibold mb-2">Salary Research Tools</h3>
+              <p className="text-muted-foreground text-sm mb-4">
+                Use these tools to research market rates and benchmark your offer.
+              </p>
+              <div className="space-y-2">
+                <a 
+                  href="https://www.glassdoor.com/Salaries/index.htm" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-primary hover:underline text-sm"
+                >
+                  Glassdoor Salaries
+                </a>
+                <a 
+                  href="https://www.payscale.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-primary hover:underline text-sm"
+                >
+                  PayScale
+                </a>
+                <a 
+                  href="https://www.levels.fyi/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-primary hover:underline text-sm"
+                >
+                  Levels.fyi (Tech)
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
