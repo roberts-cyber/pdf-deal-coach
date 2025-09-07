@@ -1,4 +1,5 @@
 import { PDFAnalyzer } from '@/components/PDFAnalyzer';
+import { YouTubeEmbed } from '@/components/YouTubeEmbed';
 
 const Index = () => {
   return (
@@ -36,57 +37,36 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {/* YouTube Videos */}
             <div className="bg-card rounded-lg p-6 hover:shadow-sm transition-shadow">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mx-auto mb-3">
-                <span className="text-primary-foreground text-sm">📺</span>
-              </div>
-              <h3 className="font-medium mb-2 text-sm">Complete Salary Negotiation Guide</h3>
-              <p className="text-muted-foreground text-xs mb-3">
+              <h3 className="font-medium mb-3 text-sm">Complete Salary Negotiation Guide</h3>
+              <p className="text-muted-foreground text-xs mb-4">
                 Everything you need to know about salary negotiation from Indeed
               </p>
-              <a 
-                href="https://youtu.be/J30wmYgzVXM?si=t692nq2W45aTXdem" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-primary hover:underline text-xs"
-              >
-                Watch on YouTube →
-              </a>
+              <YouTubeEmbed 
+                url="https://youtu.be/J30wmYgzVXM?si=t692nq2W45aTXdem"
+                title="Complete Salary Negotiation Guide"
+              />
             </div>
 
             <div className="bg-card rounded-lg p-6 hover:shadow-sm transition-shadow">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mx-auto mb-3">
-                <span className="text-primary-foreground text-sm">📺</span>
-              </div>
-              <h3 className="font-medium mb-2 text-sm">How to Get a Raise at Work</h3>
-              <p className="text-muted-foreground text-xs mb-3">
+              <h3 className="font-medium mb-3 text-sm">How to Get a Raise at Work</h3>
+              <p className="text-muted-foreground text-xs mb-4">
                 Salary negotiation tips for every stage of your career
               </p>
-              <a 
-                href="https://www.youtube.com/watch?v=AkS7ywlA9zc" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-primary hover:underline text-xs"
-              >
-                Watch on YouTube →
-              </a>
+              <YouTubeEmbed 
+                url="https://www.youtube.com/watch?v=AkS7ywlA9zc"
+                title="How to Get a Raise at Work"
+              />
             </div>
 
             <div className="bg-card rounded-lg p-6 hover:shadow-sm transition-shadow">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mx-auto mb-3">
-                <span className="text-primary-foreground text-sm">📺</span>
-              </div>
-              <h3 className="font-medium mb-2 text-sm">3 Evidence-Based Negotiation Tips</h3>
-              <p className="text-muted-foreground text-xs mb-3">
+              <h3 className="font-medium mb-3 text-sm">3 Evidence-Based Negotiation Tips</h3>
+              <p className="text-muted-foreground text-xs mb-4">
                 Scientific strategies backed by 93,000+ data points
               </p>
-              <a 
-                href="https://www.youtube.com/watch?v=e2_HXKNIzaM" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-primary hover:underline text-xs"
-              >
-                Watch on YouTube →
-              </a>
+              <YouTubeEmbed 
+                url="https://www.youtube.com/watch?v=e2_HXKNIzaM"
+                title="3 Evidence-Based Negotiation Tips"
+              />
             </div>
 
 
